@@ -5,14 +5,8 @@
 }
 
 <h2>Customers</h2>
+<p>@Html.ActionLink("New Customer", "New", null, new { @class = "btn btn-primary" })</p>
 
-@if(!Model.Any())
-{
-    <p> There are not any customers yet</p>
-
-}
-else
-{
     <table class=" table table-bordered table-hover">
         <thead>
             <tr>
@@ -39,4 +33,3 @@ else
             }
         </tbody>
     </table>
-}
